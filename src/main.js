@@ -4,4 +4,22 @@ import { name } from './utils/http.js'; // 实际上这里是解析不了的 需
 import './style.css';
 const path = "";
 
+
+console.log(path)
+
+
 console.log(import.meta)
+
+
+const user = {
+  name: "ck",
+  age: 22,
+  sex: 1
+}
+
+for (const key in user) {
+  if (Object.hasOwnProperty.call(user, key)) {
+    const value = user[key];
+    console.log(key, value)
+  }
+}

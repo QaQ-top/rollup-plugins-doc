@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rollup --config"
+    "clean": "rimraf ./dist",
+    "build": "yarn clean && rollup --config",
+    "dev": "rollup --config --watch"
   },
   "devDependencies": {
     "@types/node": "^16.3.3",
